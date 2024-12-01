@@ -45,11 +45,12 @@ func parseList (file []byte) (leftCol []int, rightCol []int) {
 func printTotalDistance (leftCol []int, rightCol []int) {
 	var totalDiff int
 
-	for i, _ := range leftCol {
+	for i := range leftCol {
 		totalDiff = totalDiff + calcDistance(leftCol[i], rightCol[i])
 	}
 
 	fmt.Printf("Total distance: %v", totalDiff)
+	fmt.Println()
 }
 
 func printSimilarityScore (leftCol []int, rightCol []int ) {
@@ -67,8 +68,8 @@ func printSimilarityScore (leftCol []int, rightCol []int ) {
 		similartyScore = similartyScore + (valueLeft * count)
 	}
 
-	fmt.Println()
 	fmt.Printf("Similarty score: %v", similartyScore)
+	fmt.Println()
 }
 
 func calcDistance (a int, b int) int {
