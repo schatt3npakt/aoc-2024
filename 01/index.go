@@ -1,3 +1,5 @@
+// DAY 1 – https://adventofcode.com/2024/day/1
+
 package main
 
 import (
@@ -13,7 +15,10 @@ func main() {
 
 	leftCol, rightCol := parseList(byte)
 
+	// Solution: Part 1
 	printTotalDistance(leftCol, rightCol)
+
+	// Solution: Part 2
 	printSimilarityScore(leftCol, rightCol)
 }
 
