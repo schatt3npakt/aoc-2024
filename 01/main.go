@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	byte, _ := os.ReadFile("./input.txt")
+	byte, _ := os.ReadFile("./01/input.txt")
 
 	leftCol, rightCol := parseList(byte)
 

@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	byte, _ := os.ReadFile("./input.txt")
+	byte, _ := os.ReadFile("./02/input.txt")
 
 	parsedFile := string(byte)
 	splitFile := strings.Split(parsedFile, "\n")
