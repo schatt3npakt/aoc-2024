@@ -29,5 +29,5 @@ func part2 (sc *bufio.Scanner) {
 		fmt.Println(sc.Text())
 	}
 
-	fmt.Println("Solution Part 1: ")
+	fmt.Println("Solution Part 2: ")
 }
